@@ -14,3 +14,9 @@ def substract_number(a : float, b : float) -> float:
 # Export the FastMCP instance as a FastAPI app for cloud deployment.
 # The platform will run the app with uvicorn automatically.
 app = mcp
+
+def main():
+    mcp.run()
+
+if __name__ == "__main__":
+    main()
