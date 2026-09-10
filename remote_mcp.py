@@ -11,5 +11,6 @@ def substract_number(a : float, b : float) -> float:
     """ substract one number from another """
     return a - b
 
-if __name__ == "__main__":
-    mcp.run(transport="http", host="0.0.0.0", port=8000)
+# Export the FastMCP instance as a FastAPI app for cloud deployment.
+# The platform will run the app with uvicorn automatically.
+app = mcp
